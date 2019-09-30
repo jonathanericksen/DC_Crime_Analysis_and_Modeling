@@ -1,3 +1,6 @@
+Note: This project was produced within a two week time period as a requirement for a Data Science program through Flatiron School.
+
+***
 # Washington, DC Crime Analysis & Predictive Modeling
 
 <p align="center">
