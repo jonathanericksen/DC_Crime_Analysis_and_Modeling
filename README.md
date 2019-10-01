@@ -23,7 +23,7 @@ The intent for this project was two-fold:
 - Theft From Automobiles
 - Theft (Other)
 
-The modeling portion will focus on identifying the best algorithm to classify the type of crime that took place. The problem we're trying to solve is whether or not a model can predict the type of crime with a reasonable degree of accuracy using the data from the DC Police Department. The implications of a successful model could feasibly assist the police department with allocating the appropriate resources as soon as as soon as a crime was to occur in an effort to mobilize the appropriate resources ahead of time in an attempt to detain the perpetrator.
+The modeling portion will focus on identifying the best algorithm to classify the type of crime that took place. The problem we're trying to solve is whether or not a model can predict the type of crime with a reasonable degree of accuracy using the data from the DC Police Department. The implications of a successful model could feasibly assist the police department with allocating the appropriate resources as soon as soon as a crime was to occur in an effort to mobilize the appropriate resources ahead of time in an attempt to detain the perpetrator.
 
 For both parts, we'll walk through the highlights as well as the methods used for obtaining, cleaning, analyzing, conditioning, feature engineering, and modeling the data.
 
@@ -40,7 +40,7 @@ For both parts, we'll walk through the highlights as well as the methods used fo
 
 The crime data for this project was obtained through the Open Data DC platform maintained by the DC government: https://opendata.dc.gov. The particular dataset used is available for download via the following URL: https://opendata.dc.gov/datasets/crime-incidents-in-2019. 
 
-Crime data was extracted for both 2018 and 2019. Both raw datasets can be found in the project repository titled: 'Crime_Incidents_in_2018.csv' & 'Crime_Incidents_in_2019.csv'.
+Crime data were extracted for both 2018 and 2019. Both raw datasets can be found in the project repository titled: 'Crime_Incidents_in_2018.csv' & 'Crime_Incidents_in_2019.csv'.
 
 ***
 
@@ -137,7 +137,7 @@ From the analysis, its clear crime volumes do not vary by weekday in a significa
 
 **Total Crime Incidents by Hour**
 
-Our next two graphics parse the total volume of crime by hour. The goal is to highlight trends that exist in terms of crime volumes within a 24 hour cycle:
+Our next two graphics parse the total volume of crime by the hour. The goal is to highlight trends that exist in terms of crime volumes within a 24-hour cycle:
 
 <p align="center">
      <img src="images/Total_crime_by_hour.png" width="700" height="400">
@@ -147,7 +147,7 @@ Our next two graphics parse the total volume of crime by hour. The goal is to hi
      <img src="images/Total_crime_by_hour_by_offense.png" width="700" height="400">
 </p>
 
-The cyclical nature of crime incidents in DC throughout a 24 hour period are clearly indicated above with the early morning hours seeing minimal crime activity vs. the afternoon and evening hours. 
+The cyclical nature of crime incidents in DC throughout a 24 hour period is clearly indicated above with the early morning hours seeing minimal crime activity vs. the afternoon and evening hours. 
 
 ### Geographic Analysis
 
@@ -185,7 +185,7 @@ Below I provide the analysis of crime by wards which offers total crime volumes 
 
 **Crime by Geographic Location**
 
-Finally, we took a look at the exact geographical location of each crime that took place. I built an interactive Tableau visual which allows the user to filter the month and crime time to geo locate each instance. A screenshot is provided below:
+Finally, we took a look at the exact geographical location of each crime that took place. I built an interactive Tableau visual which allows the user to filter the month and crime time to geolocate each instance. A screenshot is provided below:
 
 <p align="center">
      <img src="images/Crime_geo_location.png" width="650" height="450">
@@ -327,7 +327,7 @@ The modeling portion, and its implications, require further investigation and wo
 
 **Further Work**
 
-Though our model returned an ~89% accuracy score, more work is needed to improve the performance before any real world application of this model would suffice. Below I offer recommendations for further work in an attempt to achieve a better model performance: 
+Though our model returned an ~89% accuracy score, more work is needed to improve the performance before any real-world application of this model would suffice. Below I offer recommendations for further work in an attempt to achieve a better model performance: 
 
 - ***More Features***: Acquire additional data containing features such as school districts, mass transit station station stops, socioeconomic data, et cetera. These additional features, along with many potential others, may contain predictive information that might contribute to better model performance. 
 - ***More Training Data***: For this project, we trained our model using 2018 and 2019 YTD crime data. Further attempts to improve the model should include fitting the parameters using data from multiple years. Doing so is costly in terms of processing power and time, but the improvements in accuracy may be worth the effort. 
