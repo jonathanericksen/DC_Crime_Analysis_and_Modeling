@@ -130,7 +130,7 @@ We then took a look at total crime incidents by weekday extracting the effect, i
      <img src="images/Total_crime_by_weekday.png" width="650" height="450">
 </p>
 
-From the analysis, its clear crime volumes do not vary by weekday in a significant way. A crime appears just as likely to occur a given weekday relative to the rest. 
+From the analysis, its clear crime volumes do not vary by weekday in a significant way. A crime appears just as likely to occur on a given weekday relative to the rest. 
 
 **Total Crime Incidents by Hour**
 
